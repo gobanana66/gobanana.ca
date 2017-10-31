@@ -1,0 +1,43 @@
+---
+---
+
+@import "{{ site.theme }}";
+body {
+	background: #000;
+	font-family: 'Cabin Condensed', sans-serif;
+}
+body,
+html {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+}
+#background {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+#text {
+	position: absolute;
+	width: 100%;
+	top: 40%;
+	text-align: center;
+	color: #fff;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+}
+a {
+	color: #426b00;
+	text-decoration: none;
+	text-shadow: none;
+	font-size: 15px;
+	display: block;
+	padding-top: 5px;
+}
