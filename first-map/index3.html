@@ -79,6 +79,7 @@ Promise.all(promises).then(ready);
 function ready([canada]) {
   console.log(canada);
   console.log(population);
+  console.log(function(d) { return population.get(d.blacks) + "%"; });
   svg.append("g")
       .attr("class", "divisions")
     .selectAll("path")
