@@ -92,21 +92,4 @@ function ready([canada]) {
       .attr("d", path);
 }
 
-d3.json("2016CDsv2-quantized.json", function(error, can) {
-  if (error) throw error;
-
-  g.selectAll("path")
-      .data(topojson.feature(can, can.objects['provinces']).features)
-    .enter().append("path")
-      .attr("d", path)
-      .attr("class", "feature")
-      .style("fill", function(d, i){ return cscale(i); })
-      .on("click", clicked);
-
-  g.append("path")
-      .datum(topojson.mesh(can, can.objects['provinces'], function(a, b) { return a !== b; }))
-      .attr("class", "mesh")
-      .attr("d", path);
-});
-
 </script>
