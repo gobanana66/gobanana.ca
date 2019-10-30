@@ -87,7 +87,7 @@ function ready([canada]) {
       .text(function(d) { return d.blacks + "%"; });
 
   svg.append("path")
-      .datum(topojson.mesh(canada, canada.objects.states, function(a, b) { return a !== b; }))
+      .datum(topojson.mesh(canada, canada.objects.provinces, function(a, b) { return a !== b; }))
       .attr("class", "provinces")
       .attr("d", path);
 }
