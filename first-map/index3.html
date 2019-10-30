@@ -75,11 +75,11 @@ var promises = [
 
 Promise.all(promises).then(ready)
 
-function ready([us]) {
+function ready([canada]) {
   svg.append("g")
       .attr("class", "counties")
     .selectAll("path")
-    .data(topojson.feature(us, us.objects.counties).features)
+    .data(topojson.feature(canada, canada.objects.counties).features)
     .enter().append("path")
       .attr("fill", function(d) { return color(d.blacks = population.get(d.CDUID)); })
       .attr("d", path)
@@ -87,7 +87,7 @@ function ready([us]) {
       .text(function(d) { return d.blacks + "%"; });
 
   svg.append("path")
-      .datum(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; }))
+      .datum(topojson.mesh(canada, canada.objects.states, function(a, b) { return a !== b; }))
       .attr("class", "states")
       .attr("d", path);
 }
