@@ -78,6 +78,7 @@ Promise.all(promises).then(ready);
 
 function ready([canada]) {
   console.log(canada);
+  console.log(population);
   svg.append("g")
       .attr("class", "divisions")
     .selectAll("path")
