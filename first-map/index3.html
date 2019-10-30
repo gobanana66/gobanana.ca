@@ -70,10 +70,10 @@ g.call(d3.axisBottom(x)
 
 var promises = [
   d3.json("2016CDsv2-quantized.json"),
-  d3.tsv("BlackPopulationCD.tsv", function(d) { population.set(d.CDUID, d.geocode, +d.blacks); }).then(console.log(data))
+  d3.tsv("BlackPopulationCD.tsv", function(d) { population.set(d.CDUID, d.geocode, +d.blacks); })
 ]
 
-Promise.all(promises).then(ready)
+Promise.all(promises).then(ready).then(console.log(data))
 
 function ready([canada]) {
   svg.append("g")
