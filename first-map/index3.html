@@ -84,10 +84,10 @@ function ready([canada]) {
     .selectAll("path")
     .data(topojson.feature(canada, canada.objects.candivs).features)
     .enter().append("path")
-      .attr("fill", function(d) { return color(d.blacks = population.get(d.CDUID)); })
+      .attr("fill", function(d) { return color(population.get(d.black)); })
       .attr("d", path)
     .append("title")
-      .text(function(d) { return d.CDUID + "%"; });
+      .text(function(d) { return population.get(d.blacks) + "%"; });
 
   svg.append("path")
       .datum(topojson.mesh(canada, canada.objects.provinces, function(a, b) { return a !== b; }))
