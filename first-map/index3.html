@@ -75,6 +75,14 @@ var promises = [
 
 Promise.all(promises).then(ready)
 
+d3.tsv("BlackPopulationCD.tsv", function(d) { return {
+    division : d.CDUID,
+    blacks : +d.blacks
+  };
+}).then(function(data) {
+  console.log(data[0]);
+});
+
 function ready([canada]) {
   svg.append("g")
       .attr("class", "divisions")
