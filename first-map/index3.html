@@ -2,8 +2,14 @@
 <meta charset="utf-8">
 <style>
 
-.divisions {
+.counties {
   fill: none;
+}
+
+.states {
+  fill: none;
+  stroke: #fff;
+  stroke-linejoin: round;
 }
 
 </style>
@@ -13,33 +19,26 @@
 <script src="https://d3js.org/topojson.v2.min.js"></script>
 <script>
 
-// The svg
 var svg = d3.select("svg"),
     width = +svg.attr("width"),
     height = +svg.attr("height");
 
-// Map and projection
 var population = d3.map();
 
 var path = d3.geoPath();
 
-//--- START LEGEND
-//legend scale
 var x = d3.scaleLinear()
     .domain([1, 10])
     .rangeRound([600, 860]);
 
-//legend colours
 var color = d3.scaleThreshold()
     .domain(d3.range(2, 10))
     .range(d3.schemeBlues[9]);
 
-//legend positioning
 var g = svg.append("g")
     .attr("class", "key")
     .attr("transform", "translate(0,40)");
 
-//legend rectangles
 g.selectAll("rect")
   .data(color.range().map(function(d) {
       d = color.invertExtent(d);
@@ -53,7 +52,6 @@ g.selectAll("rect")
     .attr("width", function(d) { return x(d[1]) - x(d[0]); })
     .attr("fill", function(d) { return color(d[0]); });
 
-//legend title
 g.append("text")
     .attr("class", "caption")
     .attr("x", x.range()[0])
@@ -61,33 +59,29 @@ g.append("text")
     .attr("fill", "#000")
     .attr("text-anchor", "start")
     .attr("font-weight", "bold")
-    .text("Black population");
+    .text("population rate");
 
-//legend text
 g.call(d3.axisBottom(x)
     .tickSize(13)
     .tickFormat(function(x, i) { return i ? x : x + "%"; })
     .tickValues(color.domain()))
   .select(".domain")
     .remove();
-//-- END LEGEND
 
-//asynchronous loading
 var promises = [
-  d3.json("2016CDsv2-quantized.json"),
-  d3.tsv("BlackPopulationCD.tsv", function(d) { population.set(d.geocode, +d.blacks); })
+  d3.json("https://d3js.org/us-10m.v1.json"),
+  d3.tsv("BlackPopulationCD.tsv", function(d) { population.set(d.id, +d.rate); })
 ]
 
 Promise.all(promises).then(ready)
 
-//filling the topojson
 function ready([us]) {
   svg.append("g")
       .attr("class", "counties")
     .selectAll("path")
     .data(topojson.feature(us, us.objects.counties).features)
     .enter().append("path")
-      .attr("fill", function(d) { return color(d.rate = unemployment.get(d.id)); })
+      .attr("fill", function(d) { return color(d.rate = population.get(d.id)); })
       .attr("d", path)
     .append("title")
       .text(function(d) { return d.rate + "%"; });
@@ -97,6 +91,5 @@ function ready([us]) {
       .attr("class", "states")
       .attr("d", path);
 }
-
 
 </script>
