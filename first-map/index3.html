@@ -81,7 +81,7 @@ function ready([canada]) {
     .selectAll("path")
     .data(topojson.feature(canada, canada.objects.candivs).features)
     .enter().append("path")
-      .attr("fill", function(d) { return color(d.blacks = population.get(d.CDUID)); })
+      .attr("fill", function(d) { return color(d.blacks); })
       .attr("d", path)
     .append("title")
       .text(function(d) { return d.blacks + "%"; });
