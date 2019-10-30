@@ -73,7 +73,7 @@ var promises = [
   d3.tsv("BlackPopulationCD.tsv", function(d) { population.set(d.CDUID, +d.blacks); })
 ]
 
-Promise.all(promises).then(ready).then(console.log(data))
+Promise.all(promises).then(ready)
 
 function ready([canada]) {
   svg.append("g")
