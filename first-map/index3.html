@@ -81,17 +81,22 @@ var promises = [
 Promise.all(promises).then(ready)
 
 //filling the topojson
-function ready([canada]) {
+function ready([us]) {
   svg.append("g")
-      .attr("class", "divisions")
+      .attr("class", "counties")
     .selectAll("path")
-    .data(topojson.feature(canada, canada.objects.candivs).features)
+    .data(topojson.feature(us, us.objects.counties).features)
     .enter().append("path")
-      .attr("fill", function(d) { return color(d.blacks = population.get(d.geocode)); })
+      .attr("fill", function(d) { return color(d.rate = unemployment.get(d.id)); })
       .attr("d", path)
     .append("title")
-      .text(function(d) { return d.geoname + " " + d.blacks; });
+      .text(function(d) { return d.rate + "%"; });
 
+  svg.append("path")
+      .datum(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; }))
+      .attr("class", "states")
+      .attr("d", path);
 }
+
 
 </script>
