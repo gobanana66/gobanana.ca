@@ -6,7 +6,7 @@
   fill: none;
 }
 
-.states {
+.divisions {
   fill: none;
   stroke: #fff;
   stroke-linejoin: round;
@@ -77,7 +77,7 @@ Promise.all(promises).then(ready)
 
 function ready([canada]) {
   svg.append("g")
-      .attr("class", "states")
+      .attr("class", "divisions")
     .selectAll("path")
     .data(topojson.feature(canada, canada.objects.candivs).features)
     .enter().append("path")
