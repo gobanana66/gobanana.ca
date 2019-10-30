@@ -93,6 +93,7 @@ function ready([canada]) {
   svg.append("path")
       .datum(topojson.mesh(canada, canada.objects.provinces, function(a, b) { return a !== b; }))
       .attr("class", "provinces")
+      .attr("fill","#000000")
       .attr("d", path);
 }
 
