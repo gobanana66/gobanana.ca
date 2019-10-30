@@ -70,17 +70,20 @@ g.call(d3.axisBottom(x)
 
 var promises = [
   d3.json("2016CDsv2-quantized.json"),
-  d3.tsv("BlackPopulationCD.tsv", function(d) {return {
-    division : d.CDUID,
-    blacks : +d.blacks
-      };
-    }).then(function(data) {
-      console.log(data[0]);
-    });
+  d3.tsv("BlackPopulationCD.tsv", function(d) { return population.set(d.CDUID, +d.blacks); })
 ]
 
-Promise.all(promises).then(ready)
+Promise.all(promises).then(function(data) {
+  console.log(data[0]);
+}).then(ready);
 
+d3.tsv("BlackPopulationCD.tsv", function(d) { return {
+    division : d.CDUID,
+    blacks : +d.blacks
+  };
+}).then(function(data) {
+  console.log(data[0]);
+});
 
 function ready([canada]) {
   svg.append("g")
