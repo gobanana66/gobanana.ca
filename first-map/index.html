@@ -70,7 +70,7 @@ g.call(d3.axisBottom(x)
 
 var promises = [
   d3.json("https://d3js.org/us-10m.v1.json"),
-  d3.tsv("https://bl.ocks.org/adamjanes/raw/6cf85a4fd79e122695ebde7d41fe327f/7040d66840468cbb1a81de2cd7a2138df7e02928/unemployment.tsv", function(d) { unemployment.set(d.id, +d.rate); })
+  d3.tsv("unemployment.tsv", function(d) { unemployment.set(d.id, +d.rate); })
 ]
 
 Promise.all(promises).then(ready)
