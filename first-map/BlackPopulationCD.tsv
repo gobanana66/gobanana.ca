@@ -1,1 +1,294 @@
-id	rate1001	19201002	301003	251004	251005	951006	801007	751008	701009	451010	551011	01101	501102	6851103	1201201	2151202	5951203	4501204	1651205	2001206	1551207	8301208	7301209	165501210	9951211	4701212	7251213	2501214	3951215	1101216	351217	12551218	551301	15251302	951303	3251304	1051305	3601306	2051307	23901308	1401309	1351310	12251311	1751312	201313	2101314	2051315	2502401	202402	352403	602404	252405	02406	402407	152408	1602409	402410	3252411	102412	1052413	202414	502415	302416	202417	152418	552419	3202420	152421	1052422	1502423	128602425	10552426	1152427	1152428	402429	1702430	402431	1452432	252433	652434	1352435	202436	2502437	19002438	602439	3952440	452441	502442	502443	35602444	452445	1102446	2002447	8902448	02449	7102450	902451	752452	1452453	2652454	12802455	1602456	8802457	11152458	223352459	7202460	67152461	5252462	1802463	3352464	92902465	323802466	1827052467	68602468	802469	902470	2952471	43102472	21052473	31502474	5052475	11602476	1852477	1602478	1402479	1102480	852481	169352482	3102483	752484	202485	502486	3702487	152488	452489	3752490	602491	902492	752493	1602494	7302495	02496	1752497	1752498	252499	2703501	7453502	11403506	613653507	3753509	3403510	19203511	2203512	9253513	1453514	8503515	10453516	2903518	529653519	284703520	2463853521	1335853522	16203523	34153524	156253525	209703526	83053528	8553529	23553530	154853531	5703532	9553534	6403536	22953537	141353538	13453539	120003540	1703541	3253542	5053543	73953544	3203546	703547	5603548	4103549	1603551	753552	553553	15253554	1503556	2853557	7403558	7753559	653560	1854601	904602	6604603	2654604	154605	304606	404607	11154608	304609	1504610	654611	275504612	1604613	2154614	404615	854616	304617	404618	654619	204620	204621	1054622	3204623	404701	1654702	2054703	604704	154705	1204706	66504707	4904708	1004709	2454710	254711	57404712	1404713	604714	1204715	7154716	754717	2554718	854801	9504802	40154803	454804	204805	2404806	558404807	2404808	25404809	504810	7854811	593654812	7104813	4204814	2354815	1854816	42054817	3354818	604819	16655901	3755903	2505905	1805907	3055909	26905915	312905917	37605919	3355921	10105923	905924	2055926	3405927	855929	1955931	2105933	7905935	13355937	2805939	1755941	1805943	1005945	05947	955949	2255951	2055953	8005955	6105957	05959	356001	2756101	606102	156103	106104	256105	706106	6406204	2856205	556208	35
+﻿geocode	geoname	blacks
+1001	Division No. 1	1920
+1002	Division No. 2	30
+1003	Division No. 3	25
+1004	Division No. 4	25
+1005	Division No. 5	95
+1006	Division No. 6	80
+1007	Division No. 7	75
+1008	Division No. 8	70
+1009	Division No. 9	45
+1010	Division No. 10	55
+1011	Division No. 11	0
+1101	Kings	50
+1102	Queens	685
+1103	Prince	120
+1201	Shelburne	215
+1202	Yarmouth	595
+1203	Digby	450
+1204	Queens	165
+1205	Annapolis	200
+1206	Lunenburg	155
+1207	Kings	830
+1208	Hants	730
+1209	Halifax	16550
+1210	Colchester	995
+1211	Cumberland	470
+1212	Pictou	725
+1213	Guysborough	250
+1214	Antigonish	395
+1215	Inverness	110
+1216	Richmond	35
+1217	Cape Breton	1255
+1218	Victoria	55
+1301	Saint John	1525
+1302	Charlotte	95
+1303	Sunbury	325
+1304	Queens	105
+1305	Kings	360
+1306	Albert	205
+1307	Westmorland	2390
+1308	Kent	140
+1309	Northumberland	135
+1310	York	1225
+1311	Carleton	175
+1312	Victoria	20
+1313	Madawaska	210
+1314	Restigouche	205
+1315	Gloucester	250
+2401	Les Îles-de-la-Madeleine	20
+2402	Le Rocher-Percé	35
+2403	La Côte-de-Gaspé	60
+2404	La Haute-Gaspésie	25
+2405	Bonaventure	0
+2406	Avignon	40
+2407	La Matapédia	15
+2408	Matane	160
+2409	La Mitis	40
+2410	Rimouski-Neigette	325
+2411	Les Basques	10
+2412	Rivière-du-Loup	105
+2413	Témiscouata	20
+2414	Kamouraska	50
+2415	Charlevoix-Est	30
+2416	Charlevoix	20
+2417	L'Islet	15
+2418	Montmagny	55
+2419	Bellechasse	320
+2420	L'Île-d'Orléans	15
+2421	La Côte-de-Beaupré	105
+2422	La Jacques-Cartier	150
+2423	Québec	12860
+2425	Lévis	1055
+2426	La Nouvelle-Beauce	115
+2427	Robert-Cliche	115
+2428	Les Etchemins	40
+2429	Beauce-Sartigan	170
+2430	Le Granit	40
+2431	Les Appalaches	145
+2432	L'Érable	25
+2433	Lotbinière	65
+2434	Portneuf	135
+2435	Mékinac	20
+2436	Shawinigan	250
+2437	Francheville	1900
+2438	Bécancour	60
+2439	Arthabaska	395
+2440	Les Sources	45
+2441	Le Haut-Saint-François	50
+2442	Le Val-Saint-François	50
+2443	Sherbrooke	3560
+2444	Coaticook	45
+2445	Memphrémagog	110
+2446	Brome-Missisquoi	200
+2447	La Haute-Yamaska	890
+2448	Acton	0
+2449	Drummond	710
+2450	Nicolet-Yamaska	90
+2451	Maskinongé	75
+2452	D'Autray	145
+2453	Pierre-De Saurel	265
+2454	Les Maskoutains	1280
+2455	Rouville	160
+2456	Le Haut-Richelieu	880
+2457	La Vallée-du-Richelieu	1115
+2458	Longueuil	22335
+2459	Marguerite-D'Youville	720
+2460	L'Assomption	6715
+2461	Joliette	525
+2462	Matawinie	180
+2463	Montcalm	335
+2464	Les Moulins	9290
+2465	Laval	32380
+2466	Montréal	182705
+2467	Roussillon	6860
+2468	Les Jardins-de-Napierville	80
+2469	Le Haut-Saint-Laurent	90
+2470	Beauharnois-Salaberry	295
+2471	Vaudreuil-Soulanges	4310
+2472	Deux-Montagnes	2105
+2473	Thérèse-De Blainville	3150
+2474	Mirabel	505
+2475	La Rivière-du-Nord	1160
+2476	Argenteuil	185
+2477	Les Pays-d'en-Haut	160
+2478	Les Laurentides	140
+2479	Antoine-Labelle	110
+2480	Papineau	85
+2481	Gatineau	16935
+2482	Les Collines-de-l'Outaouais	310
+2483	La Vallée-de-la-Gatineau	75
+2484	Pontiac	20
+2485	Témiscamingue	50
+2486	Rouyn-Noranda	370
+2487	Abitibi-Ouest	15
+2488	Abitibi	45
+2489	La Vallée-de-l'Or	375
+2490	La Tuque	60
+2491	Le Domaine-du-Roy	90
+2492	Maria-Chapdelaine	75
+2493	Lac-Saint-Jean-Est	160
+2494	Le Saguenay-et-son-Fjord	730
+2495	La Haute-Côte-Nord	0
+2496	Manicouagan	175
+2497	Sept-Rivières--Caniapiscau	175
+2498	Minganie--Le Golfe-du-Saint-Laurent	25
+2499	Nord-du-Québec	270
+3501	"Stormont	 Dundas and Glengarry"	745
+3502	Prescott and Russell	1140
+3506	Ottawa	61365
+3507	Leeds and Grenville	375
+3509	Lanark	340
+3510	Frontenac	1920
+3511	Lennox and Addington	220
+3512	Hastings	925
+3513	Prince Edward	145
+3514	Northumberland	850
+3515	Peterborough	1045
+3516	Kawartha Lakes	290
+3518	Durham	52965
+3519	York	28470
+3520	Toronto	246385
+3521	Peel	133585
+3522	Dufferin	1620
+3523	Wellington	3415
+3524	Halton	15625
+3525	Hamilton	20970
+3526	Niagara	8305
+3528	Haldimand-Norfolk	855
+3529	Brant	2355
+3530	Waterloo	15485
+3531	Perth	570
+3532	Oxford	955
+3534	Elgin	640
+3536	Chatham-Kent	2295
+3537	Essex	14135
+3538	Lambton	1345
+3539	Middlesex	12000
+3540	Huron	170
+3541	Bruce	325
+3542	Grey	505
+3543	Simcoe	7395
+3544	Muskoka	320
+3546	Haliburton	70
+3547	Renfrew	560
+3548	Nipissing	410
+3549	Parry Sound	160
+3551	Manitoulin	75
+3552	Sudbury	55
+3553	Greater Sudbury / Grand Sudbury	1525
+3554	Timiskaming	150
+3556	Cochrane	285
+3557	Algoma	740
+3558	Thunder Bay	775
+3559	Rainy River	65
+3560	Kenora	185
+4601	Division No. 1	90
+4602	Division No. 2	660
+4603	Division No. 3	265
+4604	Division No. 4	15
+4605	Division No. 5	30
+4606	Division No. 6	40
+4607	Division No. 7	1115
+4608	Division No. 8	30
+4609	Division No. 9	150
+4610	Division No. 10	65
+4611	Division No. 11	27550
+4612	Division No. 12	160
+4613	Division No. 13	215
+4614	Division No. 14	40
+4615	Division No. 15	85
+4616	Division No. 16	30
+4617	Division No. 17	40
+4618	Division No. 18	65
+4619	Division No. 19	20
+4620	Division No. 20	20
+4621	Division No. 21	105
+4622	Division No. 22	320
+4623	Division No. 23	40
+4701	Division No. 1	165
+4702	Division No. 2	205
+4703	Division No. 3	60
+4704	Division No. 4	15
+4705	Division No. 5	120
+4706	Division No. 6	6650
+4707	Division No. 7	490
+4708	Division No. 8	100
+4709	Division No. 9	245
+4710	Division No. 10	25
+4711	Division No. 11	5740
+4712	Division No. 12	140
+4713	Division No. 13	60
+4714	Division No. 14	120
+4715	Division No. 15	715
+4716	Division No. 16	75
+4717	Division No. 17	255
+4718	Division No. 18	85
+4801	Division No. 1	950
+4802	Division No. 2	4015
+4803	Division No. 3	45
+4804	Division No. 4	20
+4805	Division No. 5	240
+4806	Division No. 6	55840
+4807	Division No. 7	240
+4808	Division No. 8	2540
+4809	Division No. 9	50
+4810	Division No. 10	785
+4811	Division No. 11	59365
+4812	Division No. 12	710
+4813	Division No. 13	420
+4814	Division No. 14	235
+4815	Division No. 15	185
+4816	Division No. 16	4205
+4817	Division No. 17	335
+4818	Division No. 18	60
+4819	Division No. 19	1665
+5901	East Kootenay	375
+5903	Central Kootenay	250
+5905	Kootenay Boundary	180
+5907	Okanagan-Similkameen	305
+5909	Fraser Valley	2690
+5915	Greater Vancouver	31290
+5917	Capital	3760
+5919	Cowichan Valley	335
+5921	Nanaimo	1010
+5923	Alberni-Clayoquot	90
+5924	Strathcona	205
+5926	Comox Valley	340
+5927	Powell River	85
+5929	Sunshine Coast	195
+5931	Squamish-Lillooet	210
+5933	Thompson-Nicola	790
+5935	Central Okanagan	1335
+5937	North Okanagan	280
+5939	Columbia-Shuswap	175
+5941	Cariboo	180
+5943	Mount Waddington	100
+5945	Central Coast	0
+5947	Skeena-Queen Charlotte	95
+5949	Kitimat-Stikine	225
+5951	Bulkley-Nechako	205
+5953	Fraser-Fort George	800
+5955	Peace River	610
+5957	Stikine	0
+5959	Northern Rockies	35
+6001	Yukon	275
+6101	Region 1	60
+6102	Region 2	15
+6103	Region 3	10
+6104	Region 4	25
+6105	Region 5	70
+6106	Region 6	640
+6204	Baffin	285
+6205	Keewatin	55
+6208	Kitikmeot	35

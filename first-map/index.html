@@ -75,7 +75,7 @@ g.call(d3.axisBottom(x)
 
 var promises = [
   d3.json("2016CDsv2-quantized.json"),
-  d3.tsv("unemployment.tsv", function(d) { unemployment.set(d.id, +d.rate); })
+  d3.tsv("BlackPopulationCD.tsv", function(d) { unemployment.set(d.geocode, +d.blacks); })
 ]
 
 Promise.all(promises).then(ready)
@@ -86,10 +86,10 @@ function ready([us]) {
     .selectAll("path")
     .data(topojson.feature(us, us.objects.candivs).features)
     .enter().append("path")
-      .attr("fill", function(d) { return color(d.rate = unemployment.get(d.id)); })
+      .attr("fill", function(d) { return color(d.blacks = unemployment.get(d.geocode)); })
       .attr("d", path)
     .append("title")
-      .text(function(d) { return d.rate + "%"; });
+      .text(function(d) { return d.blacks + "%"; });
 
   // svg.append("path")
   //     .datum(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; }))
