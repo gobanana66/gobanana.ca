@@ -73,7 +73,7 @@ var promises = [
   d3.tsv("unemployment.tsv", function(d) { unemployment.set(d.id, +d.rate); })
 ]
 
-Promise.all(promises).then(ready).then(console.log(i++))
+Promise.all(promises).then(ready).then(console.log(data))
 
 function ready([us]) {
   svg.append("g")
