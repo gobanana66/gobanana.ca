@@ -76,7 +76,7 @@ var promises = [
 Promise.all(promises).then(ready)
 
 function ready([canada]) {
-console.log(unemployment);
+console.log(canada.objects.candivs);
   svg.append("g")
       .attr("class", "counties")
     .selectAll("path")
