@@ -69,17 +69,17 @@ g.call(d3.axisBottom(x)
     .remove();
 
 var promises = [
-  d3.json("https://d3js.org/us-10m.v1.json"),
+  d3.json("2016CDsv2-quantized.json"),
   d3.tsv("unemployment.tsv", function(d) { unemployment.set(d.id, +d.rate); })
 ]
 
 Promise.all(promises).then(ready)
 
-function ready([us]) {
+function ready([canada]) {
   svg.append("g")
       .attr("class", "counties")
     .selectAll("path")
-    .data(topojson.feature(us, us.objects.counties).features)
+    .data(topojson.feature(canada, canada.objects.candivs).features)
     .enter().append("path")
       .attr("fill", function(d) { return color(d.rate = unemployment.get(d.id)); })
       .attr("d", path)
@@ -87,7 +87,7 @@ function ready([us]) {
       .text(function(d) { return d.rate + "%" + d.id; });
 
   svg.append("path")
-      .datum(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; }))
+      .datum(topojson.mesh(canada, canada.objects.provinces, function(a, b) { return a !== b; }))
       .attr("class", "states")
       .attr("d", path);
 }
