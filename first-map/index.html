@@ -80,7 +80,7 @@ function ready([us]) {
   svg.append("g")
       .attr("class", "counties")
     .selectAll("path")
-    .data(topojson.feature(us, us.objects.counties).features)
+    .data(topojson.feature(us, us.objects.candivs).features)
     .enter().append("path")
       .attr("fill", function(d) { return color(d.rate = unemployment.get(d.id)); })
       .attr("d", path)
