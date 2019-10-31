@@ -75,7 +75,7 @@ g.call(d3.axisBottom(x)
 
 var promises = [
   d3.json("2016CDsv2-quantized.json"),
-  d3.tsv("BlackPopulationCD.tsv", function(d) { population.set(d.geocode, +d.blacks); })
+  d3.tsv("BlackPopulationCD.tsv", function(d) { population.set(+d.geocode, +d.blacks); })
 ]
 
 Promise.all(promises).then(ready)
