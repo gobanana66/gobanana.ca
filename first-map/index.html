@@ -77,7 +77,7 @@ var promises = [
 Promise.all(promises).then(ready)
 
 function ready([us]) {
-  console.log(i);
+  console.log(path);
   svg.append("g")
       .attr("class", "counties")
     .selectAll("path")
