@@ -28,7 +28,7 @@ var svg = d3.select("svg"),
     width = +svg.attr("width"),
     height = +svg.attr("height");
 
-var unemployment = d3.map();
+var population = d3.map();
 
 var path = d3.geoPath();
 
@@ -64,7 +64,7 @@ g.append("text")
     .attr("fill", "#000")
     .attr("text-anchor", "start")
     .attr("font-weight", "bold")
-    .text("Unemployment rate");
+    .text("population rate");
 
 g.call(d3.axisBottom(x)
     .tickSize(13)
@@ -75,18 +75,19 @@ g.call(d3.axisBottom(x)
 
 var promises = [
   d3.json("2016CDsv2-quantized.json"),
-  d3.tsv("BlackPopulationCD.tsv", function(d) { unemployment.set(d.geocode, +d.blacks); })
+  d3.tsv("BlackPopulationCD.tsv", function(d) { population.set(d.geocode, +d.blacks); })
 ]
 
 Promise.all(promises).then(ready)
 
 function ready([us]) {
+  console.log(population);
   svg.append("g")
       .attr("class", "counties")
     .selectAll("path")
     .data(topojson.feature(us, us.objects.candivs).features)
     .enter().append("path")
-      .attr("fill", function(d) { return color(d.blacks = unemployment.get(d.geocode)); })
+      .attr("fill", function(d) { return color(d.blacks = population.get(d.geocode)); })
       .attr("d", path)
     .append("title")
       .text(function(d) { return d.geoname + " " + d.blacks; });
