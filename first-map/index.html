@@ -4,6 +4,7 @@
 
 .counties {
   fill: none;
+  transform: translate(0,500px);
 }
 
 .states {
@@ -30,7 +31,7 @@ var svg = d3.select("svg"),
 
 var population = d3.map();
 
-var projection = d3.geo.mercator()
+var projection = d3.geoIdentity()
   .reflectY(true);
 
 var path = d3.geoPath().projection(projection); 
