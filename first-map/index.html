@@ -31,8 +31,7 @@ var svg = d3.select("svg"),
 var population = d3.map();
 
 var projection = d3.geoIdentity()
-  .reflectY(true)
-  .fitSize([width,height],geojson)
+  .reflectY(true);
 
 var path = d3.geoPath().projection(projection); 
 
